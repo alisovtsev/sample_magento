@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start" label="Page Top">
+            <block class="LeSite\CustomBar\Block\Bar"
+                name="notification" before="-" template="LeSite_CustomBar::notification.phtml" ifconfig="custom_notification/general/enabled">
+                <arguments>
+                    <argument xsi:type="object" name="details">LeSite\CustomBar\ViewModel\Notification</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

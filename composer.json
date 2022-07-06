@@ -1,0 +1,16 @@
+{
+    "name": "lesite/custombar",
+    "description": "Magento 2 extension to display simple bar with text at the top of the page",
+    "type": "magento2-module",
+    "version": "1.2.0",
+    "license": "MIT",
+    "require": {
+        "php": "~7.4.0"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "LeSite\\CustomBar\\": ""
+        }
+    }
+}

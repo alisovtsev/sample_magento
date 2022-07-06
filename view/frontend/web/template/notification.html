@@ -1,0 +1,8 @@
+<div data-bind="visible: shouldShowBar">
+    <div class="notification notification_type_text" data-bind="style: { 'background-color': getBackgroundColor() }">
+        <div class="notification__text" data-bind="style: { 'color': getTextColor(), 'font-size': getFontSize() }">
+            <span data-bind='text: getText()'></span>
+        </div>
+        <div id="notification-close-btn" class="notification__close-btn" data-bind="click: closeBar" ></div>
+    </div>
+</div>

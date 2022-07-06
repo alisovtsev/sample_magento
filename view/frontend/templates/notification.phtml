@@ -1,0 +1,24 @@
+<?php
+declare(strict_types=1);
+
+/** @var $block \Magento\Framework\View\Element\Template */
+/** @var $view \LeSite\CustomBar\ViewModel\Notification */
+$view = $block->getData('details');
+?>
+<div id="custom_bar" data-bind="scope:'leSite'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+    {
+        "#custom_bar": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "leSite": {
+                        "component": "notification",
+                        "config": <?= /* @noEscape */ $view->getConfigData() ?>
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</div>
