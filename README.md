@@ -38,7 +38,7 @@ next step add to project composer.json
 ...
     "custombar": {
        "type": "path",
-       "url": "custom_bar"
+       "url": "sample_magento"
             }
 }
 composer require lesite/custombar
@@ -64,4 +64,4 @@ Go to Stores > Settings > Configuration > LeSite > Custom Top Bar Notification.
 
 # About developer
 
-The extension is developed by Andrey Lisovtsev (https://wdevs.com/)
+The extension is developed by Andrey Lisovtsev (alisovtsev@gmail.com)
